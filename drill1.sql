@@ -73,3 +73,4 @@ select count(*) from vehicles where year<2000 and hwy>20 and displ>3
 
 
 --Write a query that returns all records whose model name has a (capital) X in its 3rd position. Hint: make sure your wildcard operator accommodates for any characters after the “X”!
+select * from  vehicles where model like '--X%'
