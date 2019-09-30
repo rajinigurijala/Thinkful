@@ -2,9 +2,9 @@
 
 --1.	Write a query that allows you to inspect the schema of the naep table.
 
-        SELECT * FROM naep; 
-	
-	--The table consists of avg_math_4_score, avg_math_8_score, avg_reading_4_score, avg_reading_8_score by state and year. There are total 561 Rows
+        SELECT column_name, data_type 
+	FROM information_schema.columns
+	WHERE table_name = 'naep';
 
 --2.	Write a query that returns the first 50 records of the naep table.
 
